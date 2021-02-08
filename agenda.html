@@ -49,8 +49,84 @@
 							</div>
 							<div class="column is-2">
 								<a href="https://uab.zoom.us/j/99497131096?pwd=OE0rRlBDdkI1anQwYzhjbTRaQ0pVQT09"><button class="button is-link is-rounded is-fullwidth has-text-weight-semibold">Zoom</button></a>
-							</div><div class="column">
-							<div id="calendar"></div></div>
+							</div>  <div class="columns">
+            <div class="column is-12">
+              <div class="box">
+                <div id='calendar'></div>
+                <!-- event modal-->
+                <div id="modal-event" class="modal">
+                  <div class="modal-background"></div>
+                  <div class="modal-card">
+                    <header class="modal-card-head">
+                      <p class="modal-card-title">Event</p>
+                      <button class="delete" aria-label="close"></button>
+                    </header>
+                    <section class="modal-card-body">
+                      <!-- Content ... -->
+                      <div class="field is-horizontal">
+                        <div class="field-label is-normal">
+                          <label class="label">选择教练:</label>
+                        </div>
+                        <div class="field-body">
+                          <div class="field is-narrow is-grouped">
+                            <div class="control">
+                              <div class="select is-fullwidth">
+                                <select>
+                                  <option>王美丽</option>
+                                  <option>王二麻</option>
+                                  <option>张英俊</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="control">
+                              <a class="button is-primary is-hovered">Color</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="field is-horizontal">
+                        <div class="field-label is-normal">
+                          <label class="label">选择时间:</label>
+                        </div>
+                        <div class="field-body">
+                          <div class="control">
+                            <div class="field has-addons">
+                              <p class="control">
+                                <a class="button is-white is-hovered">
+                                  <span id="event-start">上午10点</span>
+                                </a>
+                              </p>
+                              <p class="control">
+                                <a class="button is-white is-hovered">
+                                  <span>-></span>
+                                </a>
+                              </p>
+                              <p class="control">
+                                <a class="button is-white is-hovered">
+                                  <span id="event-end">上午12点</span>
+                                </a>
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    </section>
+                    <footer class="modal-card-foot buttons is-right">
+                      <button class="button is-success">Save</button>
+                      <button class="button cancel">Cancel</button>
+                    </footer>
+                  </div>
+                </div><!-- modal-court -->
+
+              </div>
+            </div>
+          </div>
+          <!-- calendar -->
+        </div>
+      </div>
+    </div><!-- columns -->
 				</div>
 			</div>
 		</section>
