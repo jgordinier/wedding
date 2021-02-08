@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <link href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css" rel="stylesheet">
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <style>
+     .script {
+        font-family: 'Pacifico', cursive;
+     }
+.hero.has-background {
+  position: relative;
+  overflow: hidden;
+}
+.hero-background {
+  position: absolute;
+  object-fit: cover;
+  object-position: center center;
+  width: 100%;
+  height: 100%;
+    }
+    .hero-background_m {
+margin-bottom:-4rem;
+    }
+     .negspc {letter-spacing: -.3rem;}
+     hr{background-color:#bbe0d7;}
+  </style>
+      <link href='fullcalendar/main.css' rel='stylesheet' />
+    <script src='fullcalendar/main.js'></script>
+    <script>
+
+      document.addEventListener('DOMContentLoaded', function() {
+        var calendarEl = document.getElementById('calendar');
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+          initialView: 'dayGridMonth'
+        });
+        calendar.render();
+      });
+
+    </script>
+<link rel='shortcut icon' type='image/x-icon' href='./images/small/favicon.ico' />
+  <title>4321Wed!</title>
+</head>
+<body>
+  <script src="https://cdn.jsdelivr.net/gh/mathusummut/confetti.js/confetti.min.js">
+  </script>
+  <script>
+  confetti.start(2500, 200, 400);
+  </script>
+  <div class="hero is-fullheight has-background">
+    <picture>
+  <source srcset="./images/small/10_s1.webp" type="image/webp">
+  <source srcset="./images/small/10_s.jpg" type="image/jpeg"> 
+  <img alt="desert flowers" class="hero-background is-hidden-mobile" src="./images/small/10_s.jpg">
+</picture> 
+  <img alt="desert flowers" class="hero-background_m is-hidden-desktop is-hidden-tablet" src="./images/small/14.png">
+    <section class="section">
+      <div class="hero-body p-1">
+        <div class="container">
+          <div class="content has-background-white p-4">
+            <div class="columns">
+    <div id='calendar'></div>
+            </div>
+          </div>
+    </section>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8' />
+
+  </head>
+  <body>
+
+  </body>
+</html>
