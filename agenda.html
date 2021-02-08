@@ -29,6 +29,10 @@
 	      }
 	       .negspc {letter-spacing: -.3rem;}
 	       hr{background-color:#bbe0d7;}
+		#calendar {
+  max-width: 1100px;
+  margin: 40px auto;
+}
 	</style>
 	<link href='fullcalendar/main.css' rel='stylesheet'>
 	<script src='fullcalendar/main.js'>
@@ -44,12 +48,72 @@
 	        });
 
 	</script>
-	<link href='./images/small/favicon.ico' rel='shortcut icon' type='image/x-icon'>
-	<script src="https://cdn.jsdelivr.net/gh/mathusummut/confetti.js/confetti.min.js">
-	</script> 
 	<script>
-	    confetti.start(2500, 200, 400);
+		document.addEventListener('DOMContentLoaded', function() {
+  var calendarEl = document.getElementById('calendar');
+
+  var calendar = new FullCalendar.Calendar(calendarEl, {
+    initialView: 'dayGridMonth',
+    initialDate: '2021-02-07',
+    headerToolbar: {
+      left: 'prev,next today',
+      center: 'title',
+      right: 'dayGridMonth,timeGridWeek,timeGridDay'
+    },
+    events: [
+      {
+        title: 'All Day Event',
+        start: '2021-02-01'
+      },
+      {
+        title: 'Long Event',
+        start: '2021-02-07',
+        end: '2021-02-10'
+      },
+      {
+        groupId: '999',
+        title: 'Repeating Event',
+        start: '2021-02-09T16:00:00'
+      },
+      {
+        groupId: '999',
+        title: 'Repeating Event',
+        start: '2021-02-16T16:00:00'
+      },
+      {
+        title: 'Conference',
+        start: '2021-02-11',
+        end: '2021-02-13'
+      },
+      {
+        title: 'Meeting',
+        start: '2021-02-12T10:30:00',
+        end: '2021-02-12T12:30:00'
+      },
+      {
+        title: 'Lunch',
+        start: '2021-02-12T12:00:00'
+      },
+      {
+        title: 'Meeting',
+        start: '2021-02-12T14:30:00'
+      },
+      {
+        title: 'Birthday Party',
+        start: '2021-02-13T07:00:00'
+      },
+      {
+        title: 'Click for Google',
+        url: 'http://google.com/',
+        start: '2021-02-28'
+      }
+    ]
+  });
+
+  calendar.render();
+});
 	</script>
+	<link href='./images/small/favicon.ico' rel='shortcut icon' type='image/x-icon'>
 	<div class="hero is-fullheight has-background">
 		<picture><source srcset="./images/small/10_s1.webp" type="image/webp"> <source srcset="./images/small/10_s.jpg" type="image/jpeg"> <img alt="desert flowers" class="hero-background is-hidden-mobile" src="./images/small/10_s.jpg"></picture> <img alt="desert flowers" class="hero-background_m is-hidden-desktop is-hidden-tablet" src="./images/small/14.png">
 		<section class="section">
