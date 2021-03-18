@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>4321Wed!</title>
+</head>
+<body>
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<link href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css" rel="stylesheet">
+	<link href="https://fonts.gstatic.com" rel="preconnect">
+	<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+	<style>
+	       .script {
+	          font-family: 'Pacifico', cursive;
+		       color:#542B5D;
+	       }
+	   .hero.has-background {
+	    position: relative;
+	    overflow: hidden;
+	   }
+	   .hero-background {
+	    position: absolute;
+	    object-fit: cover;
+	    object-position: center center;
+	    width: 100%;
+	    height: 100%;
+	      }
+	      .hero-background_m {
+	   margin-bottom:-4rem;
+	      }
+	       .negspc {letter-spacing: -.3rem;}
+	       hr{background-color:#bbe0d7;}
+		#calendar {
+  max-width: 1100px;
+  margin: 20px auto;
+}
+	</style>
+	<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var calendarEl = document.getElementById('calendar');
+
+  var calendar = new FullCalendar.Calendar(calendarEl, {
+    initialView: 'timeGridDay',
+    initialDate: '2021-04-03',
+    headerToolbar: {
+      left: 'prev,next today',
+      center: 'title',
+      right: 'dayGridMonth,timeGridWeek,timeGridDay'
+    },
+    events: [
+      {
+        title: 'Kristina and Jeremy Wedding',
+        start: '2021-04-03'
+      },
+      {
+        title: 'Technical Issues',
+        start: '2021-04-03T15:00:00',
+        end: '2021-04-03T11:16:00'
+      },
+{
+        title: 'Meet and Greet',
+        start: '2021-04-03T16:00:00',
+        end: '2021-04-03T11:17:00'
+      },
+	    {
+        title: 'Wedding Ceremony',
+	url: 'http://bit.ly/jandkwed',
+        start: '2021-04-03T17:00:00',
+        end: '2021-04-03T11:17:45:00',
+	backgroundColor:'#00d1b2'
+      },
+	{
+        title: 'Reception and Dinner on your own',
+        start: '2021-04-03T18:00:00',
+        end: '2021-04-03T11:18:30:00'
+      },
+	    {
+        title: 'Trivia!!',
+        start: '2021-04-03T19:30:00',
+        end: '2021-04-03T11:21:00:00'
+      }	 
+    ]
+  });
+
+  calendar.render();
+});
+</script>
+	<link href='./images/small/favicon.ico' rel='shortcut icon' type='image/x-icon'>
+	<div class="hero is-fullheight has-background">
+		<picture><source srcset="./images/small/10_s1.webp" type="image/webp"> <source srcset="./images/small/10_s.jpg" type="image/jpeg"> <img alt="desert flowers" class="hero-background is-hidden-mobile" src="./images/small/10_s.jpg"></picture> <img alt="desert flowers" class="hero-background_m is-hidden-desktop is-hidden-tablet" src="./images/small/14.png">
+		<section class="section">
+			<div class="hero-body p-1">
+				<div class="container has-background-white p-4">
+					<div>
+						<div class="columns">
+							<div class="column is-10">
+								<div class="script mb-3 is-size-1">
+									<a href="index.html">Kristina and Jeremy<span class="negspc">'</span>s Spectacular Internet Wedding</a>
+								</div>
+								<h5 class="subtitle is-5">The wedding will be on 4/3/21 (April 3rd at 4:30pm CDT). <a href="https://calendar.google.com/calendar/u/0/event?eid=MXZzZnQ0Mmhyc2s3aXBpNmt0bDA4N2h2YjEgcjg1bW41azZoZTA5cTVpcHFwZjAxdm9obnNAZw&ctz=America/Chicago">Click here to add to your calendar!</a></h5>
+							</div>
+					
+						</div>
+								<div>
+								<h3>Wedding Cake Recipie</h3>
+								<img src="./images/small/cake.jpg" alt="Texas Sheet Cake">
+								</div>
+							</div>
+						</div>
+					</div>
+		</section>
+</div>
+</body>
+</html>
