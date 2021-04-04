@@ -76,7 +76,7 @@ border-radius: .5rem;
 								<div class="script mb-3 is-size-1">
 									Kristina and Jeremy<span class="negspc">'</span>s Spectacular Internet Wedding
 								</div>
-								<h5 class="subtitle is-5">The wedding venue will open at 3pm CDT. Wedding starts at 4:55pm CDT.</a></h5>
+								<h5 class="subtitle is-5">Thank you so much for coming! Video is below. Skip to the middle.</h5>
 								 <!-- <form class="kwes-form" action="https://kwes.io/api/foreign/forms/Jig9nNnayCaan0vfwARq">-->
 									<div class="columns field is-grouped-multiline">
  <!--<div class="control column">
@@ -90,13 +90,13 @@ border-radius: .5rem;
   </div>
  <div class="control column">
     <button type="submit" class="button is-primary has-text-weight-semibold">Click to RSVP</button>
-										</div></form> -->
+										</div></form> 
 									<div class="column">
    <button class="button is-link is-fullwidth has-text-weight-semibold" onclick="window.open('https://hopin.com/events/jeremy-and-kristina-s-wedding');">Click to Join the Wedding</button>
 										</div>
 										<div class="column">
    <button class="button is-primary is-fullwidth has-text-weight-semibold" onclick="window.open('https://triviahub-io.zoom.us/j/87350795439');">Click for Trivia at 7:30pm CDT</button>
-										</div>
+										</div>-->
 									
 									</div>
 
@@ -108,7 +108,7 @@ border-radius: .5rem;
     var video = document.getElementById('video');
     if(Hls.isSupported()) {
         var hls = new Hls();
-        hls.loadSource('https://stream.mux.com/007rwZZxXijJ00M7COK4p01LrYsQt8Xfh01oUj5p3GAS02lw.m3u8');
+        hls.loadSource('https://stream.mux.com/qhIkv5JlQ100MI4hQSKdH4bC02mmV7YpO02EACLdchC02H4.m3u8');
         hls.attachMedia(video);
 	hls.LoadingSpinner(no);
         hls.on(Hls.Events.MANIFEST_PARSED,function() {
@@ -121,7 +121,7 @@ border-radius: .5rem;
     // Note: it would be more normal to wait on the 'canplay' event below however on Safari (where you are most likely to find built-in HLS support) the video.src URL must be on the user-driven
     // white-list before a 'canplay' event will be emitted; the last video event that can be reliably listened-for when the URL is not on the white-list is 'loadedmetadata'.
     else if (video.canPlayType('application/vnd.apple.mpegurl')) {
-        video.src = 'https://stream.mux.com/007rwZZxXijJ00M7COK4p01LrYsQt8Xfh01oUj5p3GAS02lw.m3u8';
+        video.src = 'https://stream.mux.com/qhIkv5JlQ100MI4hQSKdH4bC02mmV7YpO02EACLdchC02H4.m3u8';
         video.addEventListener('loadedmetadata',function() {
             video.play();
         });
