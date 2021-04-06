@@ -108,7 +108,7 @@ border-radius: .5rem;
     var video = document.getElementById('video');
     if(Hls.isSupported()) {
         var hls = new Hls();
-        hls.loadSource('https://stream.mux.com/qhIkv5JlQ100MI4hQSKdH4bC02mmV7YpO02EACLdchC02H4.m3u8');
+        hls.loadSource('https://stream.mux.com/OUCEJ2dnCn6xhCUrG01a3VpV3eyTRPyrmIuy7ZXtZIhE.m3u8');
         hls.attachMedia(video);
 	hls.LoadingSpinner(no);
         hls.on(Hls.Events.MANIFEST_PARSED,function() {
@@ -121,7 +121,7 @@ border-radius: .5rem;
     // Note: it would be more normal to wait on the 'canplay' event below however on Safari (where you are most likely to find built-in HLS support) the video.src URL must be on the user-driven
     // white-list before a 'canplay' event will be emitted; the last video event that can be reliably listened-for when the URL is not on the white-list is 'loadedmetadata'.
     else if (video.canPlayType('application/vnd.apple.mpegurl')) {
-        video.src = 'https://stream.mux.com/qhIkv5JlQ100MI4hQSKdH4bC02mmV7YpO02EACLdchC02H4.m3u8';
+        video.src = 'https://stream.mux.com/OUCEJ2dnCn6xhCUrG01a3VpV3eyTRPyrmIuy7ZXtZIhE.m3u8';
         video.addEventListener('loadedmetadata',function() {
             video.play();
         });
